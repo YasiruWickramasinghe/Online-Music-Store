@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style/paymentdetails.css">
+		<script src="js/payment.js"></script>
+		<title>Payment Details</title>
+	</head>
+	
+
+
+	<header>
+		<!--Logo-->
+		<a href="home.html"><img src="images/icon3.png" alt="RhythmLK" height="100" width="100" class="logo"></a>
+		
+		<!--User-->
+		<div class="user">
+			<a href="profile.html"><img src="images/user.jpg" alt="User" height="50" width="50"></a><br>
+			PROFILE<br>
+			
+			<!--Logout Button-->
+			<div class="btn">
+				<a href="login.html"><button type="button" >LOGOUT</button></a>
+			</div>
+		</div>
+	
+	
+	
+		<!--Title-->
+		<center>
+			<h2>RhythmLK</h2>
+		</center>
+	
+	</header>
+
+
+<body >
+
+
+
+		<!-- Menu -->
+	<ul class="menu">
+
+		<li class="menu" ><a href="home.html">Home</a></li>
+		<div class="dropdown">
+			<button class="dropbtn">Products</button>
+			<div class="dropdown-content">
+				<a href="guitar.html">Guitar & Violin</a>
+					<a href="keyboards.html">Keyboard</a>
+					<a href="percussion.html">Percussion</a>
+					<a href="flute.html">Flute</a>
+			</div>
+		</div> 
+		</div> 
+		<li class="menu"><a href="aboutus.html">About Us</a></</li>
+		<li class="menu"><a href="contact.html">Contact Us</a></</li>
+	
+	
+	</ul>
+<br>	
+
+
+<u><h2 style="text-align:center">Payment Details</h2></u>
+<br>
+
+
+
+    <form  method ="POST" action ="submitPayment.php">
+		<center>
+			<table width="50%" >
+				<tr>
+					<td>
+						Name:
+					</td>
+					<td>
+						<input type="text" name="payname" required>
+					</td>
+					<td>
+						Contact Number:
+					</td>
+					<td>
+						<input type="text" placeholder="Enter 10 Digit Phone No." name="paycontact"  pattern="[0-9]{10}" required>
+					</td>
+					<tr></tr>
+					<tr></tr>
+					<tr></tr>
+				<tr>
+					<td>
+						Address:
+					</td>
+					<td>
+						<input type="text" name="payaddress" required>
+					</td>
+					<td>
+						Quantity:
+					</td>
+					<td>
+						<input type="number" name="payquantity" id="quantity" required >
+					</td>
+				</tr>
+			</table>
+		</center>
+		
+		<br>
+		
+	
+		<center>	
+			<table width="50%">
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Payment Method</legend>
+							<table>
+									<tr>
+										<td>
+											<input type="radio" name="payment" value="cash" >Cash On Delievery
+										</td>
+										<td>
+										</td>
+										
+										<td>
+											<input type="radio" name="payment" value="card" >Card
+										</td>
+									</tr>
+									<tr>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+													<input type="text" name="payCHname" placeholder="Cardholder's Name" >
+												</td>
+											<tr>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+													<input type="text" name="paycardnumber" placeholder="Card Number" >
+												</td>
+											</tr>
+											<tr>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+													Expiry
+												</td>
+											</tr>
+											<tr>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+													<input type="text" name="paymonth" placeholder="Month" >
+												</td>
+												<td>
+													<input type="text" name="payyear" placeholder="year" >
+												</td>
+												<td>
+												</td>
+												<td>
+													<input type="text" name="paySecuritycode" placeholder="Security Code">
+												</td>
+											</tr>
+											<tr>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+												</td>
+												<td>
+													<img src="images/payment.png" class="payment" >
+												</td>
+											</tr>
+												
+											
+													
+					</td>
+				</tr>
+			</tr>
+							</table>
+						</fieldset>
+			</table>
+		</center>
+		
+		
+		<br>
+		<center>
+		
+			<input type="submit" value="Submit" onclick="paymentForm()">
+		
+		</center>
+	
+	</form> 
+	
+
+	
+<!--Footer-->	
+<div class="footer">
+	
+		<table class="table" align="right">
+			<tr>
+				<td>
+					<a href="https://www.facebook.com/"><img src="images/facebook.png" class="facebook" ></a>
+				</td>
+				<td>
+					<a href="https://twitter.com"><img src="images/twitter.png" class="twitter" ></a>
+				</td>
+				<td>
+					<a href="https://www.instagram.com/"><img src="images/instagram.png" class="instagram" ></a>
+				</td>
+				<td>
+					<a href="https://www.google.lk/"><img src="images/g.png" class="g" ></a>
+				</td>	
+				
+			</tr>
+			</table>
+			
+			<p class="copy">© Copyright 2019 RhythmLK. All rights reserved. </p>
+	</div> 
+
+
+</body>
+</html>
+    

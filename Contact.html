@@ -1,0 +1,140 @@
+ <!DOCTYPE html> <!--this form fill by user main contact us page-->
+<html>
+	<head>
+		<title> RhythmLK - Contact US</title>
+				<link rel="stylesheet" type="text/css" href="style/contact.css ">
+				<script src="js/contact.js"></script>
+	</head>
+	
+	<body>
+	
+		<header>
+	
+			<!--Main Logo-->
+			<a href="home.php"><img src="images/icon3.png" alt="RhythmLK" height="100" width="100" class="logo"></a>
+			
+			<!--User profile-->
+			<div class="user">
+			
+				<a href="profile.php"><img src="images/user.jpg" alt="User" height="50" width="50"></a><br>
+				PROFILE<br>
+				
+				<div class="btn">
+					<a href="login.php"><button type="button" >LOGOUT</button></a>
+				</div>
+				
+			</div>
+		
+			<!--Title-->
+			<center>
+				<h2>RhythmLK</h2>
+			</center>
+	
+		</header>
+
+		<!--Menu bar-->
+		<ul class="menu">
+			<li class="menu" ><a href="home.php">Home</a></li>
+			
+				<!--Drop down-->
+				<div class="dropdown">
+					<button class="dropbtn">Products</button>
+					
+					<div class="dropdown-content">
+						<a href="guitar.php">Guitar & Violin</a>
+							<a href="keyboards.html">Keyboard</a>
+							<a href="percussion.html">Percussion</a>
+							<a href="flute.html">Flute</a>
+					</div>
+					
+				</div> 
+				
+			<li class="menu"><a href="aboutus.html">About Us</a></</li>
+			<li class="menu"><a href="contact.html">Contact Us</a></</li>
+			<li class="menu"><a href="FAQs.php">FAQs</a></</li>
+		
+		</ul>
+		
+		
+		
+
+		<!--contactus / user form-->	
+		<div class="wrap">
+			<div class="contactUser">
+			
+				<form method ="POST" action ="submitContact.php" class ="NewItem">
+				
+					<h2>Enter your contact details</h2>
+						<input   type="text" class="feild" placeholder="Your Name" required name="Cname"/>  <!--html button name Cname  this name add in to the back end details page-->
+						<br>
+						<input   type="email" class="feild" placeholder="Your Email" required name="Cemail"/>    <!--html button name Cemail-->
+						<br>
+						<input   type="text" class="feild" placeholder="Your phone number" required name="Cphone"/>    <!--html button name Cphone-->
+						<br>
+						<textarea  class="feild"  placeholder="Your Message" rows="5" cols="20" required name="Cmassage" id="message"></textarea>   <!--html button name Cmassage-->
+						<br>
+						<input type="submit" class="sendbtn" value="SEND" onclick="productForm()">
+						<br>
+						
+				</form>		
+			
+			
+			 
+		
+			</div>
+
+			
+				<!--contactus / our details-->	
+			<div class="contactOur">
+				<center>
+					<h1>CONTACT US</h1>
+					<hr class="line" width="75%">
+				</center>		
+				<h3>
+					<p>
+						<img src="images/tel.png" alt="mainLogo" height="20" width="20">
+						Telephone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;0771234567
+					</p>
+					<p>
+						<img src="images/e mail.png" alt="mainLogo" height="20" width="20">
+						E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:RhythmLK@gmail.com
+					</p>
+					<p>
+						<img src="images/add.png" alt="mainLogo" height="20" width="20">
+						Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:No 27,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main street,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malabe.
+					</p>
+					<p>
+						<center>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7965975616034!2d79.97091261431798!3d6.914905820408822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae255fe10100553%3A0xb8420fba115279f!2sSLIIT%20Faculty%20of%20Computing!5e0!3m2!1sen!2slk!4v1566614065333!5m2!1sen!2slk" width="400" height="300" frameborder="0" style="border:5;" allowfullscreen=""></iframe>
+						</center>
+					</p>	
+				</h3>	
+			</div>	
+		</div>
+		
+		
+		
+		<!--footer-->
+		<div class="footer">
+
+			<table class="table" align="right">
+				<tr>
+					<td>
+						<a href="https://www.facebook.com/"><img src="images/facebook.png" class="facebook" ></a>
+					</td>
+					<td>
+						<a href="https://twitter.com"><img src="images/twitter.png" class="twitter" ></a>
+					</td>
+					<td>
+						<a href="https://www.instagram.com/"><img src="images/instagram.png" class="instagram" ></a>
+					</td>
+					<td>
+						<a href="https://www.google.lk/"><img src="images/g.png" class="g" ></a>
+					</td>
+				</tr>
+			</table>
+			<p class="copy">© Copyright 2019 RhythmLK. All rights reserved. </p>
+		</div> 
+			
+	</body>
+</html>
